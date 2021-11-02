@@ -1,15 +1,12 @@
-const Post = () => {
+const Post = ({ description, author }) => {
   return (
     <div className="post">
       <img src="/blue-origami-bird.png" alt="blue-origami" />
-      <p className="description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi,
-        facere.
-      </p>
+      <p className="description">{description}</p>
       <div>
         <span>
           <small>Author:</small>
-          Some Anonymous
+          {author}
         </span>
       </div>
     </div>

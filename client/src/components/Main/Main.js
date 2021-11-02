@@ -1,19 +1,14 @@
 import Post from "./Post/Post";
-const Main = () => {
+const Main = (posts) => {
   return (
     <main className="main">
       <h1>Someee Heading</h1>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
-      <Post className="posts"></Post>
+      <h2>{console.log(posts)}</h2>
+      <div className="posts">
+        {posts.map((x) => (
+          <Post description={x.description} author={x.author} />
+        ))}
+      </div>
     </main>
   );
 };

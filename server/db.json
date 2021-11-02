@@ -1,15 +1,15 @@
 {
     "posts":[
         {"id": 1,
-            "content": "Some content here",
+            "description": "Some content here",
             "author": "Pesho"
         },
         {"id": 2,
-            "content": "Some content here",
+            "description": "Some content here",
             "author": "Gosho"
         },
         {"id": 3,
-            "content": "Some content here",
+            "description": "Some content here",
             "author": "Stamat"
         }
     ]

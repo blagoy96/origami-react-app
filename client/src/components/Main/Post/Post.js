@@ -1,3 +1,4 @@
+import "./Post.css";
 const Post = ({ description, author }) => {
   return (
     <div className="post">

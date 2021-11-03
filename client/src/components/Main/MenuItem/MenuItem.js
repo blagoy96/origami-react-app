@@ -1,3 +1,4 @@
+import "./MenuItem.css";
 const MenuItem = (props) => {
   return (
     <li className="menuItem">

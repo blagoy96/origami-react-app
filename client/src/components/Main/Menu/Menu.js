@@ -1,4 +1,5 @@
 import MenuItem from "../MenuItem/MenuItem";
+import "./Menu.css";
 const Menu = () => {
   return (
     <aside className="menu">

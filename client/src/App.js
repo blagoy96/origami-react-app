@@ -4,6 +4,15 @@ import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import { Component } from "react";
+import {
+  Route,
+  Link,
+  NavLink,
+  Redirect,
+  Switch,
+  Routes,
+} from "react-router-dom";
+import About from "./components/About/About";
 
 class App extends Component {
   constructor(props) {
@@ -26,6 +35,9 @@ class App extends Component {
         <Header />
         <div className="container">
           <Menu />
+          <Routes>
+            <Route path="/about" component={About} />
+          </Routes>
           <Main posts={this.state.posts} />
         </div>
         <Footer />

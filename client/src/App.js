@@ -4,15 +4,9 @@ import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import { Component } from "react";
-import {
-  Route,
-  Link,
-  NavLink,
-  Redirect,
-  Switch,
-  Routes,
-} from "react-router-dom";
+import { Route, Routes, Link, NavLink, Redirect } from "react-router-dom";
 import About from "./components/About/About";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 class App extends Component {
   constructor(props) {
@@ -36,9 +30,11 @@ class App extends Component {
         <div className="container">
           <Menu />
           <Routes>
-            <Route path="/about" component={About} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/" element={<Main posts={this.state.posts} />} />
+            <Route path="*" element={<h1>Error page</h1>} />
           </Routes>
-          <Main posts={this.state.posts} />
         </div>
         <Footer />
       </>

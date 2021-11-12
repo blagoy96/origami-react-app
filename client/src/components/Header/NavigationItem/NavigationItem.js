@@ -2,7 +2,7 @@ import "./NavigationItem.css";
 const NavigationItem = (props) => {
   return (
     <li className="listItem">
-      <a href="#">{props.children}</a>
+      <span>{props.children}</span>
     </li>
   );
 };

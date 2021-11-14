@@ -33,49 +33,49 @@ const Header = () => {
           <NavigationItem>Contact Us</NavigationItem>
         </NavLink>
         <Link
-          to="/"
+          to="/about/georgi"
           className={(navData) => (navData.isActive ? "active" : "")}
         >
           <NavigationItem>Going to 4</NavigationItem>
         </Link>
         <Link
-          to="/"
+          to="/about/lubo"
           className={(navData) => (navData.isActive ? "active" : "")}
         >
           <NavigationItem>Going to 5</NavigationItem>
         </Link>
         <Link
-          to="/"
+          to="/about/kris"
           className={(navData) => (navData.isActive ? "active" : "")}
         >
           <NavigationItem>Going to 6</NavigationItem>
         </Link>
         <Link
-          to="/"
+          to="/about/bucata"
           className={(navData) => (navData.isActive ? "active" : "")}
         >
           <NavigationItem>Going to 7</NavigationItem>
         </Link>
         <Link
-          to="/"
+          to="/about/rado"
           className={(navData) => (navData.isActive ? "active" : "")}
         >
           <NavigationItem>Going to 8</NavigationItem>
         </Link>
         <Link
-          to="/"
+          to="/about/siso"
           className={(navData) => (navData.isActive ? "active" : "")}
         >
           <NavigationItem>Going to 9</NavigationItem>
         </Link>
         <Link
-          to="/"
+          to="/about/joro"
           className={(navData) => (navData.isActive ? "active" : "")}
         >
           <NavigationItem>Going to 10</NavigationItem>
         </Link>
         <Link
-          to="/"
+          to="/about/kaynakchiev"
           className={(navData) => (navData.isActive ? "active" : "")}
         >
           <NavigationItem>Going to 11</NavigationItem>

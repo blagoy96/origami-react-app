@@ -30,10 +30,11 @@ class App extends Component {
         <div className="container">
           <Menu />
           <Routes>
-            <Route path="/about" element={<About />} />
+            <Route path="/about/:name" element={<About />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/" element={<Main posts={this.state.posts} />} />
             <Route path="*" element={<h1>Error page</h1>} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
         <Footer />

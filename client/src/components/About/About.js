@@ -1,7 +1,9 @@
+import { useParams } from "react-router-dom";
+
 const About = () => {
   return (
     <main className="main">
-      <h1>About Page</h1>
+      <h1>About {useParams().name} Page</h1>
     </main>
   );
 };
